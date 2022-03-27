@@ -1,5 +1,6 @@
 const help = require("./commands/help");
 const organize = require("./commands/organize");
+const tree = require("./commands/tree");
 
 let inputArr = process.argv.slice(2);
 
@@ -8,7 +9,7 @@ let path = inputArr[1];
 
 switch(command){
     case "tree":
-        //call tree function
+        tree(path);
         break;
     case "organize":
         organize(path);

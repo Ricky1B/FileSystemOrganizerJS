@@ -53,6 +53,7 @@ function getFolderName(ext){
             return type;
         }
     }
+    return "miscellaneous"
 }
 
 function copyFileToDest(srcPath, destPath){
